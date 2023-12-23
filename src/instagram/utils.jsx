@@ -1,7 +1,7 @@
 import axios from "axios";
 
 function get(link, setstate) {
-  if (link.substring(0, 25) === "https://www.instagram.com") {
+  if (link.substring(0, 25) === "https://www.instagram.com" || "https://instagram.com") {
     setstate((p) => ({ ...p, loader: true }));
     const options = {
       method: "GET",
